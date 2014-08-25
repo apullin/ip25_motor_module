@@ -1167,85 +1167,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
-<library name="OPL Eagle Library">
-<packages>
-<package name="R1206-8">
-<description>&lt;b&gt;BOURNS&lt;/b&gt; Chip Resistor Array&lt;p&gt;
-Source: RS Component / BUORNS</description>
-<wire x1="-1.55" y1="0.75" x2="-1" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-0.6" y1="0.75" x2="-0.2" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="0.2" y1="0.75" x2="0.6" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="1.55" y1="0.75" x2="1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
-<wire x1="-1" y1="0.75" x2="-0.6" y2="0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="-0.2" y1="0.75" x2="0.2" y2="0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="0.6" y1="0.75" x2="1" y2="0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="1.55" y1="-0.75" x2="1" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="0.6" y1="-0.75" x2="0.2" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-0.2" y1="-0.75" x2="-0.6" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="-1" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
-<wire x1="1" y1="-0.75" x2="0.6" y2="-0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="0.2" y1="-0.75" x2="-0.2" y2="-0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="-0.6" y1="-0.75" x2="-1" y2="-0.75" width="0.1016" layer="51" curve="180"/>
-<wire x1="-1.651" y1="1.27" x2="1.651" y2="1.27" width="0.127" layer="21"/>
-<wire x1="1.651" y1="1.27" x2="1.651" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.651" y1="-1.27" x2="-1.651" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.651" y1="-1.27" x2="-1.651" y2="1.27" width="0.127" layer="21"/>
-<smd name="1" x="-1.2065" y="-0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="2" x="-0.381" y="-0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="3" x="0.381" y="-0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="4" x="1.2065" y="-0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="5" x="1.2065" y="0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="6" x="0.381" y="0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="7" x="-0.381" y="0.762" dx="0.508" dy="0.762" layer="1"/>
-<smd name="8" x="-1.2065" y="0.762" dx="0.508" dy="0.762" layer="1"/>
-<text x="-1.905" y="1.27" size="0.889" layer="25" ratio="11">&gt;NAME</text>
-<text x="-1.651" y="-0.254" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.5875" y1="-1.143" x2="1.5875" y2="1.143" layer="39"/>
-</package>
-</packages>
-<symbols>
-<symbol name="R-1">
-<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.508" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0.508" x2="1.27" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-0.508" x2="-1.27" y2="-0.508" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-0.508" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
-<text x="-2.794" y="1.27" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="-2.794" y="-2.54" size="1.27" layer="96" ratio="10">&gt;value</text>
-<pin name="1" x="-3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="3.81" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="R-4R*" prefix="R" uservalue="yes">
-<description>Resistor Array</description>
-<gates>
-<gate name="A" symbol="R-1" x="0" y="7.62" swaplevel="4"/>
-<gate name="B" symbol="R-1" x="0" y="2.54" swaplevel="4"/>
-<gate name="C" symbol="R-1" x="0" y="-2.54" swaplevel="4"/>
-<gate name="D" symbol="R-1" x="0" y="-7.62" swaplevel="4"/>
-</gates>
-<devices>
-<device name="" package="R1206-8">
-<connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="8"/>
-<connect gate="B" pin="1" pad="2"/>
-<connect gate="B" pin="2" pad="7"/>
-<connect gate="C" pin="1" pad="3"/>
-<connect gate="C" pin="2" pad="6"/>
-<connect gate="D" pin="1" pad="4"/>
-<connect gate="D" pin="2" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="wirepad">
 <description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -1358,7 +1279,6 @@ Source: RS Component / BUORNS</description>
 <part name="GND26" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND33" library="biomimetic" deviceset="GND" device=""/>
 <part name="GND46" library="biomimetic" deviceset="GND" device=""/>
-<part name="R8" library="OPL Eagle Library" deviceset="R-4R*" device="" value="15k"/>
 <part name="C47" library="biomimetic" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="U$1" library="biomimetic" deviceset="3.3V" device=""/>
 <part name="GND24" library="biomimetic" deviceset="GND" device=""/>
@@ -1386,7 +1306,6 @@ Source: RS Component / BUORNS</description>
 <part name="P20" library="wirepad" deviceset="SMD2" device="" value="MOTOR_B_BEMF"/>
 <part name="P21" library="wirepad" deviceset="SMD2" device="" value="MOTOR_C_BEMF"/>
 <part name="P22" library="wirepad" deviceset="SMD2" device="" value="MOTOR_D_BEMF"/>
-<part name="R1" library="OPL Eagle Library" deviceset="R-4R*" device="" value="15k"/>
 <part name="IC1" library="biomimetic" deviceset="LTC6088" device=""/>
 <part name="R2" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R4" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
@@ -1404,6 +1323,10 @@ Source: RS Component / BUORNS</description>
 <part name="R16" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R17" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R18" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R1" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R8" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R19" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R20" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 </parts>
 <sheets>
 <sheet>
@@ -1507,7 +1430,6 @@ Source: RS Component / BUORNS</description>
 <instance part="C47" gate="G$1" x="116.84" y="20.32"/>
 <instance part="U$1" gate="G$1" x="111.76" y="30.48"/>
 <instance part="GND24" gate="1" x="111.76" y="7.62"/>
-<instance part="R8" gate="C" x="147.32" y="158.75" rot="R90"/>
 <instance part="P3" gate="1" x="304.8" y="160.02" smashed="yes">
 <attribute name="NAME" x="289.56" y="160.02" size="1.778" layer="95"/>
 <attribute name="VALUE" x="297.18" y="160.02" size="1.778" layer="96"/>
@@ -1598,13 +1520,8 @@ Source: RS Component / BUORNS</description>
 <attribute name="NAME" x="269.24" y="220.98" size="1.778" layer="95"/>
 <attribute name="VALUE" x="276.86" y="220.98" size="1.778" layer="96"/>
 </instance>
-<instance part="R8" gate="B" x="147.32" y="123.19" rot="R90"/>
-<instance part="R1" gate="C" x="147.32" y="85.09" rot="R90"/>
-<instance part="R1" gate="B" x="147.32" y="49.53" rot="R90"/>
-<instance part="IC1" gate="A" x="154.94" y="167.64"/>
 <instance part="IC1" gate="B" x="154.94" y="93.98"/>
 <instance part="IC1" gate="C" x="154.94" y="58.42"/>
-<instance part="IC1" gate="D" x="154.94" y="132.08"/>
 <instance part="IC1" gate="P" x="111.76" y="20.32"/>
 <instance part="R2" gate="G$1" x="139.7" y="170.18"/>
 <instance part="R4" gate="G$1" x="139.7" y="165.1"/>
@@ -1622,6 +1539,12 @@ Source: RS Component / BUORNS</description>
 <instance part="R16" gate="G$1" x="154.94" y="142.24"/>
 <instance part="R17" gate="G$1" x="154.94" y="104.14"/>
 <instance part="R18" gate="G$1" x="154.94" y="68.58"/>
+<instance part="IC1" gate="D" x="154.94" y="167.64"/>
+<instance part="IC1" gate="A" x="154.94" y="132.08"/>
+<instance part="R1" gate="G$1" x="147.32" y="157.48" rot="R90"/>
+<instance part="R8" gate="G$1" x="147.32" y="121.92" rot="R90"/>
+<instance part="R19" gate="G$1" x="147.32" y="83.82" rot="R90"/>
+<instance part="R20" gate="G$1" x="147.32" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1990,10 +1913,10 @@ Source: RS Component / BUORNS</description>
 <wire x1="152.4" y1="177.8" x2="153.67" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="170.18" x2="147.32" y2="170.18" width="0.1524" layer="91"/>
 <junction x="147.32" y="170.18"/>
-<pinref part="IC1" gate="A" pin="+IN"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <junction x="152.4" y="177.8"/>
+<pinref part="IC1" gate="D" pin="+IN"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -2002,9 +1925,9 @@ Source: RS Component / BUORNS</description>
 <wire x1="147.32" y1="165.1" x2="147.32" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="165.1" x2="147.32" y2="165.1" width="0.1524" layer="91"/>
 <junction x="147.32" y="165.1"/>
-<pinref part="R8" gate="C" pin="2"/>
-<pinref part="IC1" gate="A" pin="-IN"/>
 <pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="D" pin="-IN"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -2015,10 +1938,10 @@ Source: RS Component / BUORNS</description>
 <wire x1="149.86" y1="134.62" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="134.62" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
 <junction x="147.32" y="134.62"/>
-<pinref part="IC1" gate="D" pin="+IN"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <junction x="149.86" y="142.24"/>
+<pinref part="IC1" gate="A" pin="+IN"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -2027,9 +1950,9 @@ Source: RS Component / BUORNS</description>
 <wire x1="149.86" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <junction x="147.32" y="129.54"/>
-<pinref part="R8" gate="B" pin="2"/>
-<pinref part="IC1" gate="D" pin="-IN"/>
 <pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="A" pin="-IN"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -2052,9 +1975,9 @@ Source: RS Component / BUORNS</description>
 <wire x1="147.32" y1="91.44" x2="147.32" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <junction x="147.32" y="91.44"/>
-<pinref part="R1" gate="C" pin="2"/>
 <pinref part="IC1" gate="B" pin="-IN"/>
 <pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R19" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -2077,9 +2000,9 @@ Source: RS Component / BUORNS</description>
 <wire x1="147.32" y1="55.88" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91"/>
 <junction x="147.32" y="55.88"/>
-<pinref part="R1" gate="B" pin="2"/>
 <pinref part="IC1" gate="C" pin="-IN"/>
 <pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R20" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MOTOR_D_BEMF" class="0">
@@ -2108,24 +2031,32 @@ Source: RS Component / BUORNS</description>
 <wire x1="220.98" y1="109.22" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="149.86" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="149.86" x2="147.32" y2="152.4" width="0.1524" layer="91"/>
 <label x="149.86" y="149.86" size="1.778" layer="95"/>
-<pinref part="R8" gate="C" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="152.4" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
+<junction x="147.32" y="152.4"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="114.3" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="114.3" x2="147.32" y2="116.84" width="0.1524" layer="91"/>
 <label x="149.86" y="114.3" size="1.778" layer="95"/>
-<pinref part="R8" gate="B" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="116.84" x2="147.32" y2="119.38" width="0.1524" layer="91"/>
+<junction x="147.32" y="116.84"/>
 </segment>
 <segment>
 <label x="149.86" y="76.2" size="1.778" layer="95"/>
-<wire x1="147.32" y1="76.2" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="R1" gate="C" pin="1"/>
+<wire x1="147.32" y1="76.2" x2="147.32" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="78.74" x2="147.32" y2="81.28" width="0.1524" layer="91"/>
+<junction x="147.32" y="78.74"/>
 </segment>
 <segment>
 <label x="149.86" y="40.64" size="1.778" layer="95"/>
-<wire x1="147.32" y1="40.64" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="R1" gate="B" pin="1"/>
+<wire x1="147.32" y1="40.64" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+<wire x1="147.32" y1="43.18" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
+<junction x="147.32" y="43.18"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2271,10 +2202,10 @@ Source: RS Component / BUORNS</description>
 <wire x1="165.1" y1="142.24" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
 <junction x="165.1" y="132.08"/>
-<pinref part="IC1" gate="D" pin="OUT"/>
 <pinref part="R12" gate="G$1" pin="1"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <junction x="160.02" y="142.24"/>
+<pinref part="IC1" gate="A" pin="OUT"/>
 </segment>
 </net>
 <net name="MOTOR_B_BEMF" class="0">
@@ -2303,10 +2234,10 @@ Source: RS Component / BUORNS</description>
 <wire x1="165.1" y1="177.8" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="167.64" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
 <junction x="165.1" y="167.64"/>
-<pinref part="IC1" gate="A" pin="OUT"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <junction x="162.56" y="177.8"/>
+<pinref part="IC1" gate="D" pin="OUT"/>
 </segment>
 </net>
 <net name="MOTOR_A_BEMF" class="0">
