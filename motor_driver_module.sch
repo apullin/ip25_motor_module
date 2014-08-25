@@ -1400,6 +1400,10 @@ Source: RS Component / BUORNS</description>
 <part name="R12" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R13" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 <part name="R14" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R15" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R16" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R17" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
+<part name="R18" library="biomimetic" deviceset="RESISTOR" device="0402-RES"/>
 </parts>
 <sheets>
 <sheet>
@@ -1594,10 +1598,6 @@ Source: RS Component / BUORNS</description>
 <attribute name="NAME" x="269.24" y="220.98" size="1.778" layer="95"/>
 <attribute name="VALUE" x="276.86" y="220.98" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="D" x="154.94" y="104.14"/>
-<instance part="R1" gate="A" x="154.94" y="68.58"/>
-<instance part="R8" gate="D" x="157.48" y="177.8"/>
-<instance part="R8" gate="A" x="154.94" y="142.24"/>
 <instance part="R8" gate="B" x="147.32" y="123.19" rot="R90"/>
 <instance part="R1" gate="C" x="147.32" y="85.09" rot="R90"/>
 <instance part="R1" gate="B" x="147.32" y="49.53" rot="R90"/>
@@ -1618,6 +1618,10 @@ Source: RS Component / BUORNS</description>
 <instance part="R12" gate="G$1" x="172.72" y="132.08"/>
 <instance part="R13" gate="G$1" x="172.72" y="93.98"/>
 <instance part="R14" gate="G$1" x="172.72" y="58.42"/>
+<instance part="R15" gate="G$1" x="157.48" y="177.8"/>
+<instance part="R16" gate="G$1" x="154.94" y="142.24"/>
+<instance part="R17" gate="G$1" x="154.94" y="104.14"/>
+<instance part="R18" gate="G$1" x="154.94" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -1982,12 +1986,14 @@ Source: RS Component / BUORNS</description>
 <segment>
 <wire x1="144.78" y1="170.18" x2="147.32" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="170.18" x2="147.32" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="177.8" x2="153.67" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="177.8" x2="152.4" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="177.8" x2="153.67" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="170.18" x2="147.32" y2="170.18" width="0.1524" layer="91"/>
 <junction x="147.32" y="170.18"/>
-<pinref part="R8" gate="D" pin="1"/>
 <pinref part="IC1" gate="A" pin="+IN"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<junction x="152.4" y="177.8"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -2004,13 +2010,15 @@ Source: RS Component / BUORNS</description>
 <net name="N$22" class="0">
 <segment>
 <wire x1="147.32" y1="134.62" x2="147.32" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="142.24" x2="151.13" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="142.24" x2="149.86" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="142.24" x2="151.13" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="134.62" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="134.62" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
 <junction x="147.32" y="134.62"/>
-<pinref part="R8" gate="A" pin="1"/>
 <pinref part="IC1" gate="D" pin="+IN"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<junction x="149.86" y="142.24"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -2028,12 +2036,14 @@ Source: RS Component / BUORNS</description>
 <segment>
 <wire x1="144.78" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="96.52" x2="147.32" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="104.14" x2="151.13" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="104.14" x2="151.13" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <junction x="147.32" y="96.52"/>
-<pinref part="R1" gate="D" pin="1"/>
 <pinref part="IC1" gate="B" pin="+IN"/>
 <pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<junction x="149.86" y="104.14"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -2051,12 +2061,14 @@ Source: RS Component / BUORNS</description>
 <segment>
 <wire x1="144.78" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="60.96" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="68.58" x2="151.13" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="68.58" x2="149.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="68.58" x2="151.13" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="60.96" x2="147.32" y2="60.96" width="0.1524" layer="91"/>
 <junction x="147.32" y="60.96"/>
-<pinref part="R1" gate="A" pin="1"/>
 <pinref part="IC1" gate="C" pin="+IN"/>
 <pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<junction x="149.86" y="68.58"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -2208,25 +2220,29 @@ Source: RS Component / BUORNS</description>
 <net name="N$34" class="0">
 <segment>
 <wire x1="162.56" y1="58.42" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="158.75" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="68.58" x2="165.1" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="68.58" x2="165.1" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R1" gate="A" pin="2"/>
 <wire x1="165.1" y1="58.42" x2="167.64" y2="58.42" width="0.1524" layer="91"/>
 <junction x="165.1" y="58.42"/>
 <pinref part="IC1" gate="C" pin="OUT"/>
 <pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<junction x="160.02" y="68.58"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="158.75" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="104.14" x2="160.02" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="104.14" x2="165.1" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="104.14" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="R1" gate="D" pin="2"/>
 <wire x1="165.1" y1="93.98" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
 <junction x="165.1" y="93.98"/>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<junction x="160.02" y="104.14"/>
 </segment>
 </net>
 <net name="MOTOR_C_BEMF" class="0">
@@ -2250,13 +2266,15 @@ Source: RS Component / BUORNS</description>
 <net name="N$37" class="0">
 <segment>
 <wire x1="162.56" y1="132.08" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="158.75" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="142.24" x2="160.02" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="142.24" x2="165.1" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="142.24" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="R8" gate="A" pin="2"/>
 <wire x1="165.1" y1="132.08" x2="167.64" y2="132.08" width="0.1524" layer="91"/>
 <junction x="165.1" y="132.08"/>
 <pinref part="IC1" gate="D" pin="OUT"/>
 <pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<junction x="160.02" y="142.24"/>
 </segment>
 </net>
 <net name="MOTOR_B_BEMF" class="0">
@@ -2280,13 +2298,15 @@ Source: RS Component / BUORNS</description>
 <net name="N$36" class="0">
 <segment>
 <wire x1="162.56" y1="167.64" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="161.29" y1="177.8" x2="165.1" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="161.29" y1="177.8" x2="162.56" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="177.8" x2="165.1" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="177.8" x2="165.1" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="R8" gate="D" pin="2"/>
 <wire x1="165.1" y1="167.64" x2="167.64" y2="167.64" width="0.1524" layer="91"/>
 <junction x="165.1" y="167.64"/>
 <pinref part="IC1" gate="A" pin="OUT"/>
 <pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<junction x="162.56" y="177.8"/>
 </segment>
 </net>
 <net name="MOTOR_A_BEMF" class="0">
